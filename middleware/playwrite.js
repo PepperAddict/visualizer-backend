@@ -1,6 +1,6 @@
 const express = require("express");
 require("dotenv").config();
-const { firefox, chromium} = require("playwright");
+const {chromium} = require("playwright");
 
 const router = express();
 
