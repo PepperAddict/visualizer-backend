@@ -4,16 +4,16 @@
   "main": "index.js",
   "author": "<jenearly@gmail.com>",
   "license": "MIT",
-  "scripts" :{
+  "scripts": {
     "start": "node index.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
-    "formidable": "^2.0.1",
+    "formidable": "^1.2.2",
     "node-fetch": "^3.2.3",
     "nodemon": "^2.0.15",
-    "playwright": "^1.20.1"
+    "playwright": "^1.5.2"
   }
 }
