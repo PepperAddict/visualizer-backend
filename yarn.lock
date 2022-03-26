@@ -968,6 +968,13 @@ pixelmatch@5.2.1:
   dependencies:
     pngjs "^4.0.1"
 
+playwright-chromium@^1.20.1:
+  version "1.20.1"
+  resolved "https://registry.yarnpkg.com/playwright-chromium/-/playwright-chromium-1.20.1.tgz#7a80cc4e517c397e7a60aac50a34e87be2803609"
+  integrity sha512-zDJm59GEOWrHqpByblzaKI+bpswd3nrheCoAGOTBDX7MsQYwAV/ZBS2aCJzeGxDt/67brq/fQuZse3GwnCk+6A==
+  dependencies:
+    playwright-core "1.20.1"
+
 playwright-core@1.20.1:
   version "1.20.1"
   resolved "https://registry.yarnpkg.com/playwright-core/-/playwright-core-1.20.1.tgz#2d892964dd3ddc93f6e185be4b59621f3a339d4c"
