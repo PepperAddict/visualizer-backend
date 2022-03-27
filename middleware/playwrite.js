@@ -2,6 +2,7 @@ const express = require("express");
 require("dotenv").config();
 
 const { chromium } = require("playwright-chromium");
+const { firefox } = require("playwright-firefox");
 const router = express();
 
 router.get(["/api/1/play/", "/api/1/play/:page?"], async (req, res) => {
@@ -43,7 +44,7 @@ router.get(["/api/1/play/", "/api/1/play/:page?"], async (req, res) => {
     '--disable-dev-profile',
   ]
 
-  const browser = (req.query.full) ? await chromium.launch({chromiumSandbox: false}) : await chromium.launch({chromiumSandbox: false});
+  const browser = (req.query.full) ? await firefox.launch() : await chromium.launch({chromiumSandbox: false});
   const page = await browser.newPage();
 
   await page.setViewportSize(whichView[req.query.mode || "desktop"])

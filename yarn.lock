@@ -463,6 +463,11 @@ finalhandler@~1.1.2:
     statuses "~1.5.0"
     unpipe "~1.0.0"
 
+firefox@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/firefox/-/firefox-0.0.1.tgz#82c1d9c2dee6fb8b7ca49a5a654412c73f09c060"
+  integrity sha1-gsHZwt7m+4t8pJpaZUQSxz8JwGA=
+
 formidable@^1.2.2:
   version "1.2.6"
   resolved "https://registry.yarnpkg.com/formidable/-/formidable-1.2.6.tgz#d2a51d60162bbc9b4a055d8457a7c75315d1a168"
@@ -964,6 +969,13 @@ playwright-core@1.20.1:
     ws "8.4.2"
     yauzl "2.10.0"
     yazl "2.5.1"
+
+playwright-firefox@^1.20.1:
+  version "1.20.1"
+  resolved "https://registry.yarnpkg.com/playwright-firefox/-/playwright-firefox-1.20.1.tgz#d4bc3f1977781c9c305f96d0445f020fe844c6a0"
+  integrity sha512-RSDG0fMU39gXULGSfN/O1I60vw53bluTT88tpM2Tz/HSUkWn67BjqAkuC3bcvQE9Xj3q4Gn6R7MdV9Kvz4H9xg==
+  dependencies:
+    playwright-core "1.20.1"
 
 playwright@^1.20.1:
   version "1.20.1"
