@@ -44,7 +44,7 @@ router.get(["/api/1/play/", "/api/1/play/:page?"], async (req, res) => {
     '--disable-dev-profile',
   ]
 
-  const browser = (req.query.full) ? await firefox.launch() : await chromium.launch({chromiumSandbox: false});
+  const browser = await chromium.launch({chromiumSandbox: false});
   const page = await browser.newPage();
 
   await page.setViewportSize(whichView[req.query.mode || "desktop"])
