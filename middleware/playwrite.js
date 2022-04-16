@@ -41,10 +41,11 @@ router.get(["/api/1/play/", "/api/1/play/:page?"], async (req, res) => {
     '--disable-gpu',
     '--no-sandbox',
     '--disable-web-security',
+    '--disable-setuid-sandbox',
     '--disable-dev-profile',
   ]
 
-  const browser = await chromium.launch({chromiumSandbox: false, args});
+  const browser = await chromium.launch({args: args, chromiumSandbox: false});
   const page = await browser.newPage();
 
   await page.setViewportSize(whichView[req.query.mode || "desktop"])
