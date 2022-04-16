@@ -54,7 +54,7 @@ router.get(["/api/1/play/", "/api/1/play/:page?"], async (req, res) => {
 })
   await browser.close();
   res.set("Content-Type", "image/png");
-  res.send(image);
+  res.send(image); 
 });
 
 module.exports = router;
