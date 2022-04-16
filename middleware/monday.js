@@ -1,12 +1,14 @@
+
 const express = require("express");
 require("dotenv").config();
 const router = express();
 const formidable = require("formidable");
-var fs = require("fs");
-//var fetch = require("node-fetch");
+const fs = require("fs");
+const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
 const thaturi = "http://localhost:8888";
 const cors = require('cors')
 const path = require("path");
+
 
 // router.use("/api/1/munday", (req, res) => {
 //   res.setHeader("Access-Control-Allow-Origin", "*");
@@ -215,8 +217,8 @@ router.use("/api/1/figma-call", async (req, res) => {
       .then((resp) => {
         res.json(resp);
       });
-  } catch {
-    console.log("error");
+  } catch(err) {
+    console.log("error", err);
   }
 });
 
